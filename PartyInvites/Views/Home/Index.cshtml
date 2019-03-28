@@ -1,0 +1,36 @@
+﻿
+@{ 
+    Layout = null;
+    
+    } 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap-theme.css" rel="stylesheet" />
+    <title>Index</title>
+    <style>
+        .btn a {
+            color: black;
+            text-decoration: wavy
+        }
+
+        body {
+            background-color: #0094ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="text-center"> 
+    <h2>We're going to have a BBQ party!</h2>
+    <h3>And you're invited!</h3> 
+    <div class="btn btn-success">
+        @Html.ActionLink("RSVP Now", "RsvpForm")
+        </div>
+    </div>
+</body>
+</html>
+
